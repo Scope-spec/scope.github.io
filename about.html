@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style2.css">
+    <title>idojaras | az oldalról</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">időjárások<i class='bx bxs-sun' ></i></div>
+        <ul>
+            <li><a href="home.html">Kezdőlap</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">Az oldalról</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Időjárás Teszt</h1>
+        <form id="weather-form">
+            <label for="favorite-season">Melyik a kedvenc évszakod?</label>
+            <select id="favorite-season" name="favorite-season" required>
+                <option value="">Válassz egy lehetőséget</option>
+                <option value="tavasz">Tavasz</option>
+                <option value="nyár">Nyár</option>
+                <option value="ősz">Ősz</option>
+                <option value="tél">Tél</option>
+            </select>
+
+            <label for="temperature-preference">Milyen hőmérsékletet szeretsz leginkább?</label>
+            <input type="number" id="temperature-preference" name="temperature-preference" placeholder="Pl. 25" required>
+
+            <label>Mennyire fontos számodra a napsütés?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="sunshine-importance" value="nagyon fontos" required> Nagyon fontos</label>
+                <label><input type="radio" name="sunshine-importance" value="fontos"> Fontos</label>
+                <label><input type="radio" name="sunshine-importance" value="nem fontos"> Nem fontos</label>
+            </div>
+
+            <label>Érdekel az időjárás előrejelzés?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="weather-interest" value="igen" required> Igen</label>
+                <label><input type="radio" name="weather-interest" value="nem"> Nem</label>
+            </div>
+
+            <label for="comments">Bármilyen megjegyzés az időjárással kapcsolatban?</label>
+            <textarea id="comments" name="comments" placeholder="Írj megjegyzést..." rows="4"></textarea>
+
+            <button type="submit">Küldés</button>
+        </form>
+    </div>
+
+</body>
+</html>

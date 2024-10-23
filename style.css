@@ -7,20 +7,25 @@
     font-family: "Poppins", sans-serif;
 }
 
+
 body{
     background-color: #37474f;
-    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+
 }
 
 .container{
-    height: 400px;
+    height: 400px;    
     background-color: #232931;
     color: #fff;
     border-radius: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .left-info{
@@ -161,4 +166,44 @@ body{
 
 .loc-button:hover{
     background: #1a237e;
+}
+
+nav {
+    width: 100%;
+    background-color: #232931;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width:375px) and (max-width:991px) and (max-width:1199px) and (max-width:1200px){
+    /* */
 }
